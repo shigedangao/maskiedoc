@@ -30,7 +30,7 @@ jobs:
 
   dispatch:
     needs: ["build"]
-    uses: shigedangao/graphie/.github/workflows/reusable-dispatch.yaml@main
+    uses: shigedangao/maskiedoc/.github/workflows/reusable-dispatch.yaml@main
     with:
       app_name: maskie
       env: prod
