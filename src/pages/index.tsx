@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import Content from '../components/content'
-import MaskIcon from '@site/static/img/medical-mask.png'
+import MaskIcon from '@site/static/img/person_mask.svg'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -19,7 +19,7 @@ function HomepageHeader() {
               Try it
           </button>
         </div>
-        <img src={MaskIcon} alt="mask icon"/>
+        <MaskIcon />
       </div>
     </header>
   );

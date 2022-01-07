@@ -3,18 +3,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
 import { useState } from 'react';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery,
-  gql
-} from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: 'http://localhost:3000/graphql',
-  cache: new InMemoryCache()
-});
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const query = `query GetNewCaseByDepartment($data: GraphPcrInputReg!) {
   getPcrTestMadeByRegion(data: $data) {
@@ -40,8 +30,14 @@ const data = `
 
 export default function Content(): JSX.Element {
   const [result, setResult] = useState("");
+  const {siteConfig} = useDocusaurusContext();
 
   const triggerQuery = () => {
+    const client = new ApolloClient({
+      uri: process.env.GRAPHQL_ENDPOINT,
+      cache: new InMemoryCache()
+    });
+
     client.query({
       query: gql`${query}`,
       variables: {

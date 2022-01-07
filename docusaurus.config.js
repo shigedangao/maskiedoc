@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+require('dotenv').config()
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -15,7 +16,10 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'shigedangao', // Usually your GitHub org/user name.
   projectName: 'maskiedoc', // Usually your repo name.
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    'docusaurus2-dotenv'
+  ],
   presets: [
     [
       'classic',
