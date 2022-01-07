@@ -1,0 +1,104 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #7ec3f5;
+  --ifm-color-primary-dark: #5cb3f2;
+  --ifm-color-primary-darker: #4aabf1;
+  --ifm-color-primary-darkest: #1793ed;
+  --ifm-color-primary-light: #a0d3f8;
+  --ifm-color-primary-lighter: #b2dbf9;
+  --ifm-color-primary-lightest: #e5f3fd;
+
+  --ifm-color-secondary: #a3a1f5;
+  --ifm-color-secondary-dark: #7f7cf1;
+  --ifm-color-secondary-darker: #6d6aef;
+  --ifm-color-secondary-darkest: #3733e9;
+  --ifm-color-secondary-light: #c7c6f9;
+  --ifm-color-secondary-lighter: #d9d8fb;
+  --ifm-color-secondary-lightest: #ffffff;
+
+  --ifm-color-info: #717582;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home_container {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+
+  &__inner {
+    display: flex;
+    padding: 0px 100px 0px 100px;
+    justify-content: start;
+    flex-direction: column;
+
+    .hero {
+
+      &__title, &__subtitle {
+        text-align: left;
+      }
+
+    }
+
+    &__button {
+      display: flex;
+    }
+  }
+
+  img {
+    width: 250px;
+    height: 100%;
+  }
+}
+
+.button {
+  &__orange {
+
+    &:hover {
+      cursor: pointer;
+      background-color: #d9530d;
+    }
+  }
+}
+
+.content {
+  padding: 20px 20px;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-font-color-base-inverse);
+
+  &__inner {
+    &__graph {
+      display: flex;
+
+      .block {
+        padding: 20px;
+        width: 50%;
+
+        h3 {
+          padding-top: 36px;
+        }
+
+        .code {
+          width: 100%;
+          max-height: 300px;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
