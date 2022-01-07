@@ -4,9 +4,12 @@ steps:
       'build',
       '-t',
       '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:${_SHA}',
+      '--build-arg=GRAPHQL_ENDPOINT=$_GRAPHQL_ENDPOINT',
       '-f',
       '.build/Dockerfile',
       '.'
     ]
 images:
 - '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
+substitutions:
+  _GRAPHQL_ENDPOINT: http://localhost:3000
