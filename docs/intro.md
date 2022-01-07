@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Maskie is a GraphQL endpoint which exposes some data about the Covid19 pandemic in France. Data comes from:
 
-- [Data gouv](data.gouv.fr)
+- [Data gouv](https://data.gouv.fr/)
 - [Dashboard covid19 repo](https://github.com/etalab/data-covid19-dashboard-widgets)
 
 ## Datasets available
