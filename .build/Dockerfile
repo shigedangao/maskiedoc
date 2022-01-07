@@ -6,6 +6,8 @@ COPY . ${APP_PATH}
 
 WORKDIR ${APP_PATH}
 
+RUN if [ "$ENV" = "prod" ] ; then cp .env.dist.prod .env ; else cp .env.dist.preprod .env ; fi
+
 RUN yarn install && \
     yarn run build
 
