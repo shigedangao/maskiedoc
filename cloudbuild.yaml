@@ -4,9 +4,12 @@ steps:
       'build',
       '-t',
       '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:${_SHA}',
+      '--build-arg=ENV=$_EN',
       '-f',
       '.build/Dockerfile',
       '.'
     ]
 images:
 - '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
+substitutions:
+  _EN: preprod

@@ -15,8 +15,8 @@ function HomepageHeader() {
         <div className="home_container__inner">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <button className='button button--info'>
-              Try it
+          <button className='button button--info' onClick={() => window.location.href = process.env.GRAPHQL_ENDPOINT}>
+            Try it
           </button>
         </div>
         <MaskIcon />

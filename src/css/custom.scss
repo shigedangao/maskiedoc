@@ -25,6 +25,28 @@
   --ifm-color-info: #717582;
 }
 
+html[data-theme='dark'] {
+  --ifm-color-primary: #5686d1;
+  --ifm-color-primary-dark: #3f75cb;
+  --ifm-color-primary-darker: #366ec5;
+  --ifm-color-primary-darkest: #2c5aa2;
+  --ifm-color-primary-light: #6d97d7;
+  --ifm-color-primary-lighter: #799fda;
+  --ifm-color-primary-lightest: #9cb8e4;
+
+  --ifm-color-secondary: #7a56b8;
+  --ifm-color-secondary-dark: #6c48ab;
+  --ifm-color-secondary-darker: #6644a2;
+  --ifm-color-secondary-darkest: #543885;
+  --ifm-color-secondary-light: #8969c0;
+  --ifm-color-secondary-lighter: #9073c4;
+  --ifm-color-secondary-lightest: #a78fd0;
+}
+
+.aa-DetachedSearchButton {
+  border-radius: 100px !important;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
