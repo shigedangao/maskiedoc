@@ -60,7 +60,7 @@ export default function Content(): JSX.Element {
     <div className='content'>
       <div className='content__inner'>
         <h2>Example</h2>
-        <p>Below is an example which shows you how to use the GraphQL endpoint</p>
+        <p>Below is an example which shows an example of a GraphQL query. No authentication is required</p>
         <div className='content__inner__graph'>
           <div className='block'>
             <Tabs>

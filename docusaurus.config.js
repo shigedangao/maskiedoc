@@ -9,7 +9,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Maskie',
   tagline: 'A GraphQL endpoint which exposes 🇫🇷 covid data from data.gouv.fr and other sources',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://covid19data.fr/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,7 +18,8 @@ const config = {
   projectName: 'maskiedoc', // Usually your repo name.
   plugins: [
     'docusaurus-plugin-sass',
-    'docusaurus2-dotenv'
+    'docusaurus2-dotenv',
+    require.resolve("@cmfcmf/docusaurus-search-local")
   ],
   presets: [
     [
@@ -60,7 +61,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/shigedangao/graphie',
             label: 'GitHub',
             position: 'right',
           },
