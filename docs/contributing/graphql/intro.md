@@ -22,3 +22,7 @@ The preprod endpoint allows you to explore queries available
 ```bash
 https://covid19data.fr/graphql
 ```
+
+## Data introspection
+
+Data type and documentation can be founded on by using the staging environment [here](https://preprod.covid19data.fr/graphql)
