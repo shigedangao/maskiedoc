@@ -9,7 +9,7 @@ steps:
       '.build/Dockerfile',
       '.'
     ]
-images:
-- '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
 substitutions:
   _EN: preprod
+images:
+- '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
