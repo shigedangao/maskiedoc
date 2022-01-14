@@ -26,6 +26,7 @@ The hospital microservice is used to expose these datasets:
 - [Mix data between SI-VIC, SI-DEP & VAC-SI](https://raw.githubusercontent.com/etalab/data-covid19-dashboard-widgets/master/files_new/vacsi_non_vacsi_nat.csv)
 - [Entry in ICU for unvaccinated people](https://raw.githubusercontent.com/etalab/data-covid19-dashboard-widgets/master/dist/sc_non_vacsi.json)
 - [Entry in ICU for vaccinated people](https://raw.githubusercontent.com/etalab/data-covid19-dashboard-widgets/master/dist/sc_vacsi.json)
+- [Hospital data per department](https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7)
 
 ## PCR microservice
 
@@ -33,4 +34,5 @@ The pcr microservice is used to expose these datasets:
 
 - [Positive PCR test by department](https://www.data.gouv.fr/fr/datasets/r/406c6a23-e283-4300-9484-54e78c8ae675)
 - [Positive PCR test by region](https://www.data.gouv.fr/fr/datasets/r/001aca18-df6a-45c8-89e6-f82d689e6c01)
+- [Positive PCR test in the whole country](https://www.data.gouv.fr/fr/datasets/r/dd0de5d9-b5a5-4503-930a-7b08dc0adc7c)
 - [Positive cases by department per 100k](https://www.data.gouv.fr/fr/datasets/r/4180a181-a648-402b-92e4-f7574647afa6)

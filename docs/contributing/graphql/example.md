@@ -62,7 +62,7 @@ export class SimpleCase implements From<CaseResult__Output, SimpleCase> {
 
 ## 3. Define the input
 
-To query the endpoint. Users need to provide some datas. In this case, the input will contain a single date.
+To query the endpoint. Users need to provide some data. In this case, the input will contain a single date.
 
 ```ts title="/app/resolvers/type/simplecase-input.ts"
 import { InputType, Field } from "type-graphql";

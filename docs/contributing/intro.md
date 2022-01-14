@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Getting started
 
-In this section we'll talk about the current architecture and the framework, lib that has been implemented.
+I always welcome contribution. This'll help the project greatly. This guide contains a list of informations regarding the architecture, the implementation of the whole project. You'll also find how to setup the project on your local computer and a guide on how to contribute to this project.

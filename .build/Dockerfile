@@ -14,4 +14,4 @@ RUN if [ "$ENV" = "prod" ] ; then cp .env.dist.prod .env ; else cp .env.dist.pre
 RUN yarn install && \
     yarn run build
 
-CMD ["npm", "run", "serve", "--", "--build", "--port", "80", "--host", "0.0.0.0"]
+CMD ["yarn", "run", "serve", "--", "--build", "--port", "80", "--host", "0.0.0.0"]
