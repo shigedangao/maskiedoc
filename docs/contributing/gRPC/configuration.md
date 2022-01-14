@@ -21,7 +21,7 @@ If you decide to not use the provided docker-compose.yaml. You may need to insta
 
 ### Generate TLS keys
 
-GRPC server are running in secure mode. As such it uses a pair of keys. To generate these keys. You can use the command below
+GRPC servers are running in secure mode. As such it uses a pair of keys. To generate these keys. You can use the command below
 
 ```shell
 chmod +x generator.sh
@@ -31,11 +31,9 @@ chmod +x generator.sh
 
 ### Environment variables
 
-Copy the file `config.toml.dist` into the `config.toml` and fill the environment variable. (Mostly database related environment variable)
+Copy the file `config.toml.dist` into the `config.toml` and fill the environment variable. (mostly database related environment variables)
 
 ### Running the gRPC service
-
-As describe earlier. There are 2 gRPC services:
 
 #### Run the hospital service
 
@@ -45,7 +43,13 @@ cd hospital && cargo run
 
 :::info
 
-If the service is up. You may see a message showing that the server is running port 9000
+If the service is up. You may see a similar message than the one below
+
+```bash
+[2022-01-14T14:23:13Z INFO  mask] Connecting to the database
+[2022-01-14T14:23:13Z INFO  mask] Server is running on port 9000 & Healthcheck server port 5601
+```
+
 
 :::
 
@@ -57,7 +61,12 @@ cd pcr && cargo run
 
 :::info
 
-If the service is up. You may see a message showing that the server is running port 9090
+If the service is up. You may see a similar message than the one below
+
+```shell
+[2022-01-14T14:23:39Z INFO  pcr] Connecting to the database
+[2022-01-14T14:23:39Z INFO  pcr] Starting the server port 9090 & Healthcheck server port 5601
+```
 
 :::
 
