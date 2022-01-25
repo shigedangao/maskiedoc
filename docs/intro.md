@@ -35,7 +35,13 @@ Some datasets may not be updated everyday .e.g: DREES data
 
 ## Prototyping
 
-You may use the [preprod endpoint](https://preprod.covid19data.fr/graphql) to see the list of available queries. These endpoints do not requir any authentication. Below is an example of query:
+You may use the endpoint below to see the list of available queries. These endpoints do not required any authentication.
+
+```
+https://preprod.covid19data.fr/graphql
+```
+
+Below is an example of query:
 
 ```graphql
 query GetGlobalCovidDataByDate($data: GraphPositivityInput!) {
@@ -69,4 +75,8 @@ Department is a string as the csv contain some number which can't be parsed.
 
 ## Usage in production
 
-If you want to use this endpoint for your production environment. You may then use this endpoint [https://covid19data.fr/graphql](https://covid19data.fr/graphql) in production environment. Like the prototyping environment. No authentication is required
+If you want to use this endpoint for your production environment. You may then use this endpoint in production environment. Like the prototyping environment. No authentication is required
+
+```
+https://covid19data.fr/graphql
+```
