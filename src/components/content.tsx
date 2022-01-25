@@ -42,9 +42,9 @@ export default function Content(): JSX.Element {
       query: gql`${query}`,
       variables: {
         data: {
-          day: 31,
-          month: 12,
-          year: 2021,
+          day: 1,
+          month: 1,
+          year: 2022,
           region: 11
         }
       }
