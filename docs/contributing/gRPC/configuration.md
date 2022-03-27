@@ -19,16 +19,6 @@ If you decide to not use the provided docker-compose.yaml. You may need to insta
 - [Python](https://www.python.org/downloads/)
 - A database GUI tool
 
-### Generate TLS keys
-
-GRPC servers are running in secure mode. As such it uses a pair of keys. To generate these keys. You can use the command below
-
-```shell
-chmod +x generator.sh
-
-./generator.sh
-```
-
 ### Environment variables
 
 Copy the file `config.toml.dist` into the `config.toml` and fill the environment variable. (mostly database related environment variables)
@@ -69,16 +59,6 @@ If the service is up. You may see a similar message than the one below
 ```
 
 :::
-
-### Running the gRPC server as insecure
-
-If you don't want to generate TLS keys. You should edit the `main.rs` file on the **hospital/src** & **pcr/src folder**
-
-```diff
-Server::builder()
--   .tls_config(ServerTlsConfig::new().identity(identity))?
-+   //.tls_config(ServerTlsConfig::new().identity(identity))?
-```
 
 ## Tools
 

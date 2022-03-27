@@ -59,9 +59,11 @@ Below is the argument which need to be provides
 ```json
 {
   "data": {
-    "day": 30,
-    "month": 12,
-    "year": 2021,
+    "date": {
+      "day": 10,
+      "month": 2,
+      "year": 2022,
+    },
     "department": "95"
   }
 }

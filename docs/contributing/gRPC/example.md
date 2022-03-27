@@ -154,7 +154,6 @@ In the main.rs file we need to import the module that we create and an autogener
 
 // Update the Server::builder
 Server::builder()
-    .tls_config(ServerTlsConfig::new().identity(identity))?
     .add_service(health_service)
 +   .add_service(CaseServiceServer::new(CaseHandle {
 +       pool: Arc::clone(&db_handle)
